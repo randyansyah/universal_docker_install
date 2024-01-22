@@ -1,5 +1,5 @@
 # universal_docker_install
-This script automates the installation of Docker and Docker Compose on various Linux distributions.
+This script automates the installation of Docker and Docker Compose on various Linux distributions(CentOS/RHEL and Debian/Ubuntu).
 The docker_compose.sh script simplifies the installation process of Docker and Docker Compose on Linux systems. It automatically detects your Linux distribution and installs Docker using the appropriate package manager. Docker Compose is then downloaded and installed from the official Docker GitHub releases
 
 ## Usage
