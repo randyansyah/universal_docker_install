@@ -21,6 +21,7 @@ The docker_compose.sh script simplifies the installation process of Docker and D
 After the installation is complete, you may need to log out and log back in or restart your system for group changes to take effect. try run docker command "docker images" ass non root user if system ask root user  to run command, add your user to the "docker" group:
 ```bash
 sudo usermod -aG docker $USER
+```
 
 restart your system for group changes to take effect. try run docker command "docker images" it should be work.
 
