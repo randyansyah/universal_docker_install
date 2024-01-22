@@ -6,8 +6,8 @@ The docker_compose.sh script simplifies the installation process of Docker and D
 
 1. Download the script:
    ```bash
-   wget https://raw.githubusercontent.com/your-username/your-repo/master/install_docker_and_compose.sh
-
+   wget https://raw.githubusercontent.com/randyansyah/universal_docker_install/main/docker_compose.sh
+   
 2. Make the script executable:
    ```bash
    chmod +x docker_compose.sh
