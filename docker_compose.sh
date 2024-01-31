@@ -39,8 +39,6 @@ sleep 3
 echo "system enable"
 
 # Tambahkan pengguna saat ini ke grup docker agar tidak perlu sudo saat menjalankan Docker
-sudo groupadd docker
-sleep 3
 sudo usermod -aG docker $USER
 sleep 3
 
