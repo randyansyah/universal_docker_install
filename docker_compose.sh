@@ -27,14 +27,19 @@ if [ ! -f /usr/local/bin/docker-compose ]; then
     curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
     chmod +x /usr/local/bin/docker-compose
 fi
+sleep 5
 
 # Mulai dan atur Docker untuk dijalankan pada boot
 sudo systemctl start docker
+sleep 5
 sudo systemctl enable docker
+sleep 5
 
 # Tambahkan pengguna saat ini ke grup docker agar tidak perlu sudo saat menjalankan Docker
 sudo groupadd docker
+sleep 5
 sudo usermod -aG docker $USER
+sleep 5
 
 
 echo "Docker dan Docker Compose berhasil diinstal"
