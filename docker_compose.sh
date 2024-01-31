@@ -28,12 +28,15 @@ if [ ! -f /usr/local/bin/docker-compose ]; then
     chmod +x /usr/local/bin/docker-compose
 fi
 sleep 3
+echo "docker compose di instal"
 
 # Mulai dan atur Docker untuk dijalankan pada boot
 sudo systemctl start docker
 sleep 3
+echo "system start"
 sudo systemctl enable docker
 sleep 3
+echo "system enable"
 
 # Tambahkan pengguna saat ini ke grup docker agar tidak perlu sudo saat menjalankan Docker
 sudo groupadd docker
