@@ -16,7 +16,7 @@ if [ -f /etc/redhat-release ]; then
 elif [ -f /etc/debian_version ]; then
     # Debian / Ubuntu
     sudo apt-get update
-    sudo apt-get install docker.io
+    sudo apt-get install docker.io -y
 else
     echo "Distribusi tidak didukung"
     exit 1
@@ -33,6 +33,6 @@ systemctl start docker
 systemctl enable docker
 
 # Tambahkan pengguna saat ini ke grup docker agar tidak perlu sudo saat menjalankan Docker
-usermod -aG docker $USER
+sudo usermod -aG docker $USER
 
 echo "Docker dan Docker Compose berhasil diinstal"
