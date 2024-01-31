@@ -29,10 +29,14 @@ if [ ! -f /usr/local/bin/docker-compose ]; then
 fi
 
 # Mulai dan atur Docker untuk dijalankan pada boot
-systemctl start docker
-systemctl enable docker
+sudo systemctl start docker
+sudo systemctl enable docker
 
 # Tambahkan pengguna saat ini ke grup docker agar tidak perlu sudo saat menjalankan Docker
+sudo groupadd docker
 sudo usermod -aG docker $USER
 
+
 echo "Docker dan Docker Compose berhasil diinstal"
+sleep 5
+system akan di reboot
