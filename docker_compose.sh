@@ -38,14 +38,5 @@ sudo systemctl enable docker
 sleep 3
 echo "system enable"
 sudo apt-get update
-
-# Tambahkan pengguna saat ini ke grup docker agar tidak perlu sudo saat menjalankan Docker
-sudo usermod -aG docker $USER
-sleep 3
-
-
 echo "Docker dan Docker Compose berhasil diinstal"
-echo "system akan di reboot"
-sleep 5
-sudo reboot
 
