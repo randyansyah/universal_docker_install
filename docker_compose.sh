@@ -37,6 +37,7 @@ echo "system start"
 sudo systemctl enable docker
 sleep 3
 echo "system enable"
+sudo apt-get update
 
 # Tambahkan pengguna saat ini ke grup docker agar tidak perlu sudo saat menjalankan Docker
 sudo usermod -aG docker $USER
