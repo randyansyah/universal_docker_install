@@ -38,5 +38,7 @@ sudo usermod -aG docker $USER
 
 
 echo "Docker dan Docker Compose berhasil diinstal"
+echo "system akan di reboot"
 sleep 5
-system akan di reboot
+sudo reboot
+
