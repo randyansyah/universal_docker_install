@@ -39,4 +39,6 @@ sleep 3
 echo "system enable"
 sudo apt-get update
 echo "Docker dan Docker Compose berhasil diinstal"
+sudo usermod -aG docker $USER
+sudo reboot
 
