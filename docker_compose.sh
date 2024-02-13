@@ -10,9 +10,9 @@ fi
 # Install Docker
 if [ -f /etc/redhat-release ]; then
     # CentOS / RHEL
-    yum install -y yum-utils
-    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-    yum install -y docker-ce docker-ce-cli containerd.io
+    sudo yum install -y yum-utils
+    sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    sudo yum install -y docker-ce docker-ce-cli containerd.io
 elif [ -f /etc/debian_version ]; then
     # Debian / Ubuntu
     sudo apt-get update
